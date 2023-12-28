@@ -18,8 +18,7 @@ SECRET_KEY = getenv('DJANGO_SECRET_KEY', get_random_secret_key())
 
 DEBUG = getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = getenv('DJANGO_ALLOWED_HOSTS',
-                       '127.0.0.1,localhost,192.168.0.18').split(',')
+ALLOWED_HOSTS = ['127.0.0.1','test-l1gu.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
